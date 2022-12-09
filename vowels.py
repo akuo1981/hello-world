@@ -10,16 +10,16 @@ def vowels(input):
     consonantList = []
 
     # remove any special characters and space
-    input2 = re.sub('[^\w]+|_', '', input)
+    input_result = re.sub('[^\w]+|_', '', input)
 
 
-    for i in range(len(input2)):
+    for i in range(len(input_result)):
         #print(input[i])
         character = input[i]
-        if input2[i] == 'a' or input2[i] == 'e' or input2[i] == 'i' or input2[i] == 'o' or input2[i] == 'u':
-            vowelList.append(input2[i])
+        if input_result[i] == 'a' or input_result[i] == 'e' or input_result[i] == 'i' or input_result[i] == 'o' or input_result[i] == 'u':
+            vowelList.append(input_result[i])
         else:
-            consonantList.append(input2[i])
+            consonantList.append(input_result[i])
 
     print ("Vowels:", vowelList)
     print ("Consonant:", consonantList)
